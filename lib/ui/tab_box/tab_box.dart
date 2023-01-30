@@ -22,7 +22,7 @@ class _TabBoxState extends State<TabBox> {
     return Scaffold(
       body: pages[currentPage],
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.blue,
+        selectedItemColor: Colors.black,
         unselectedItemColor: Colors.grey,
         currentIndex: currentPage,
         onTap: (value) {
@@ -31,8 +31,8 @@ class _TabBoxState extends State<TabBox> {
           });
         },
         items: const [
-          BottomNavigationBarItem(icon: Icon(Icons.api_outlined), label: ""),
-          BottomNavigationBarItem(icon: Icon(Icons.cloud_download), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.home_repair_service_outlined), label: ""),
+          BottomNavigationBarItem(icon: Icon(Icons.download_outlined), label: ""),
         ],
       ),
     );
