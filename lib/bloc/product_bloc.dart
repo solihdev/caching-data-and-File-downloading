@@ -1,3 +1,4 @@
+import 'package:cachingdata_and_filedownloading/data/models/product_model.dart';
 import 'package:cachingdata_and_filedownloading/data/models/response_model.dart';
 import 'package:cachingdata_and_filedownloading/data/repositories/product_repo.dart';
 import 'package:cachingdata_and_filedownloading/utils/assistants/get_it/get_it.dart';
@@ -7,9 +8,9 @@ part 'product_event.dart';
 
 part 'product_state.dart';
 
-class ProductBloc extends Bloc<GetProductEvent, ProductState> {
-  ProductBloc() : super(ProductsInitial()) {
-    on<GetProductEvent>(getProduct);
+class ProductsBloc extends Bloc<GetProductsEvent, ProductsState> {
+  ProductsBloc() : super(ProductsInitial()) {
+    on<GetProductsEvent>(getProduct);
   }
 
   getProduct(event, emit) async {

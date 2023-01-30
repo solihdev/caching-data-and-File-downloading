@@ -1,18 +1,18 @@
 part of 'product_bloc.dart';
 
-abstract class ProductState {}
+abstract class ProductsState {}
 
-class ProductsInitial extends ProductState {}
+class ProductsInitial extends ProductsState {}
 
-class GetProductsInProgress extends ProductState {}
+class GetProductsInProgress extends ProductsState {}
 
-class GetProductsInSuccess extends ProductState {
-  List products;
+class GetProductsInSuccess extends ProductsState {
+  List<ProductModel> products;
 
   GetProductsInSuccess({required this.products});
 }
 
-class GetProductsInFailure extends ProductState {
+class GetProductsInFailure extends ProductsState {
   String error;
 
   GetProductsInFailure({required this.error});
