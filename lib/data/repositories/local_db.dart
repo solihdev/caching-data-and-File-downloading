@@ -31,12 +31,12 @@ class LocalDatabase {
         ")");
   }
 
-  Future addCountry(ProductModel product) async {
+  Future addProduct(ProductModel product) async {
     Database db = await getDb();
     await db.insert(tableName, product.toJson());
   }
 
-  Future<List> getAllCountry() async {
+  Future<List> getAllProduct() async {
     Database db = await getDb();
 
     var result = await db.query(tableName, columns: [

@@ -5,7 +5,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 
 class ApiService extends ApiClient {
-  Future<MyResponse> getAllCountries() async {
+  Future<MyResponse> getAllProducts() async {
     MyResponse myResponse = MyResponse(error: "");
     try {
       debugPrint("Kaldi");
