@@ -10,7 +10,7 @@ class ProductPage extends StatelessWidget {
     context.read<ProductsBloc>().add(GetProductsEvent());
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Api"),
+        title: const Text("Product page Api"),
       ),
       body: Center(
         child: BlocBuilder<ProductsBloc, ProductsState>(
