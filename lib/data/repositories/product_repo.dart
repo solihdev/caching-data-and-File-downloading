@@ -1,6 +1,6 @@
 import 'package:cachingdata_and_filedownloading/data/api_service/api_service.dart';
-import 'package:cachingdata_and_filedownloading/data/models/product_model.dart';
-import 'package:cachingdata_and_filedownloading/data/models/response_model.dart';
+import 'package:cachingdata_and_filedownloading/data/models/product_model/product_model.dart';
+import 'package:cachingdata_and_filedownloading/data/models/response_model/response_model.dart';
 import 'package:cachingdata_and_filedownloading/data/repositories/local_db.dart';
 import 'package:cachingdata_and_filedownloading/utils/assistants/get_it/get_it.dart';
 

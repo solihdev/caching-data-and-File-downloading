@@ -1,5 +1,5 @@
-import 'package:cachingdata_and_filedownloading/data/models/product_model.dart';
-import 'package:cachingdata_and_filedownloading/data/models/response_model.dart';
+import 'package:cachingdata_and_filedownloading/data/models/product_model/product_model.dart';
+import 'package:cachingdata_and_filedownloading/data/models/response_model/response_model.dart';
 import 'package:cachingdata_and_filedownloading/data/repositories/product_repo.dart';
 import 'package:cachingdata_and_filedownloading/utils/assistants/get_it/get_it.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

@@ -1,6 +1,8 @@
 import 'package:cachingdata_and_filedownloading/ui/tab_box/tabs/product/product_page.dart';
 import 'package:flutter/material.dart';
 
+import 'tabs/file_downloading/file_downloading_page.dart';
+
 class TabBox extends StatefulWidget {
   const TabBox({Key? key}) : super(key: key);
 
@@ -13,9 +15,9 @@ class _TabBoxState extends State<TabBox> {
 
   @override
   Widget build(BuildContext context) {
-    List pages = [
-      const ProductPage(),
-      Container(),
+    List pages = const [
+      ProductPage(),
+      FileDownloadingPage(),
     ];
     return Scaffold(
       body: pages[currentPage],

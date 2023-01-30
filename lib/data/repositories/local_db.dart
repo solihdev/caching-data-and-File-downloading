@@ -1,4 +1,4 @@
-import 'package:cachingdata_and_filedownloading/data/models/product_model.dart';
+import 'package:cachingdata_and_filedownloading/data/models/product_model/product_model.dart';
 import 'package:sqflite/sqflite.dart';
 
 class LocalDatabase {
